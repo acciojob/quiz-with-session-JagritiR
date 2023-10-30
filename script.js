@@ -14,7 +14,7 @@ function submitQuiz() {
     }
   }
   localStorage.setItem('score', score);
-  alert('Your score is ' + score + ' out of ' + questions.length + '.');
+  document.getElementById('score').textContent = 'Your score is ' + score + ' out of ' + questions.length + '.';
 }
 
 const questionsElement = document.getElementById('questions');
